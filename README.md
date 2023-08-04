@@ -1,2 +1,3 @@
-# coordinates
-İstasyonlar icin koordinatlar.
+# Ataköy-İkitelli Koordinat Listesi
+
+İstasyonlar için koordinatların listesi.
