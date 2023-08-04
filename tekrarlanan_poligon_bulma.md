@@ -34,6 +34,10 @@ else:
     print("Yinelenen poligon ismi bulunamadı.")
 ```
 
+### Görüntü
+
+![image](https://github.com/Neodevils/koordinatlar/assets/71941576/352cc33a-ac05-4dc8-96a4-e07c3ae3e481)
+
 <hr>
 
 #### JavaScript ile:
@@ -87,3 +91,5 @@ const verileriAl = async () => {
 // Verileri al fonksiyonunu çağırıyoruz
 verileriAl();
 ```
+
+![image](https://github.com/Neodevils/koordinatlar/assets/71941576/5da6e804-142f-4f73-bca6-aa813511e944)
