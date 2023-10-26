@@ -93,3 +93,75 @@ verileriAl();
 ```
 
 ![image](https://github.com/Neodevils/koordinatlar/assets/71941576/5da6e804-142f-4f73-bca6-aa813511e944)
+
+
+# Poligon Noktalarını Sıralamak
+
+Bu işlem iki dosya gerektiriyor.
+
+### HTML
+```html
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Belge</title>
+    </head>
+    <body>
+        <!-- Dosya seçebilmesi için dosya giriş alanı -->
+        <input type="file" id="fileInput" />
+
+        <!-- Dosyayı sıralamak için kullanılacak düğme -->
+        <button type="button" onclick="dosyayiSirala()">Dosyayı Sırala</button>
+        <br />
+
+        <script src="sort_content.js" defer></script>
+        <script src="checking_duplicated.js" defer></script>
+    </body>
+</html>
+```
+
+### JavaScript
+
+```js
+// Dosyayı sıralamak için kullanılan JavaScript fonksiyonu
+function dosyayiSirala() {
+    // HTML sayfasındaki "dosyaGirdisi" öğesini al
+    const dosyaGirdisi = document.getElementById("dosyaGirdisi");
+
+    // Kullanıcının seçtiği dosyayı al
+    const dosya = dosyaGirdisi.files[0];
+
+    // Eğer bir dosya seçildiyse devam et
+    if (dosya) {
+        // Dosyayı okumak için bir FileReader oluştur
+        const okuyucu = new FileReader();
+
+        // Dosya okuma işlemi tamamlandığında yapılacak işlem
+        okuyucu.onload = (e) => {
+            // Dosya içeriğini al
+            const dosyaIcerigi = e.target.result;
+
+            // Dosyadaki satırları ayır
+            const satirlar = dosyaIcerigi.split("\n");
+
+            // Satırları sırala
+            satirlar.sort();
+
+            // Sıralanmış satırları tekrar birleştir
+            const siralanmisIcerik = satirlar.join("\n");
+
+            // Sıralanmış içeriği konsola yazdır
+            console.log(siralanmisIcerik);
+        };
+
+        // Dosyayı metin olarak oku
+        okuyucu.readAsText(dosya);
+    }
+}
+```
+
+
+
+
