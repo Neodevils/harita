@@ -1,3 +1,3 @@
-# Ataköy-İkitelli Haritacılar için Depo
+# Ataköy-İkitelli Projeler
 
-Bu depo, haritacılar için hazırlanmıştır.
+Projeleri buradan bulabilirsiniz.
