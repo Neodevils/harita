@@ -1,3 +1,3 @@
-# Ataköy-İkitelli Koordinat Listesi
+# Ataköy-İkitelli Haritacılar için Depo
 
-İstasyonlar için koordinatların listesi.
+Bu depo, haritacılar için hazırlanmıştır.
