@@ -1,3 +1,3 @@
-# Ataköy-İkitelli Projeler
+# Mimar Sinan Projeler
 
 Projeleri buradan bulabilirsiniz.
